@@ -1,3 +1,4 @@
+import { Client } from "../../interfaces/exportInterface";
 
 
 class ClientDatasource {
@@ -6,8 +7,9 @@ class ClientDatasource {
         return { name: `Kayo get id - ${idClient}` };
     } 
 
-    getClients = () => {
-        return { name: `kayo get` };
+    getClients = () : Client => {
+        let client : Client = {id:'1',name: 'Kayo', email:'kayolele222@gmail.com', sucess : true};
+        return client
     }
     
     postClients = () => {

@@ -1,4 +1,5 @@
 import { clientBusiness } from '../../business/exportsBusiness'
+import { Client } from '../../interfaces/exportInterface';
 
 class ClientController{
 
@@ -6,20 +7,20 @@ class ClientController{
         return clientBusiness.getClientById(idClient);
     }
 
-    getClients = () => {
-        return clientBusiness.getClients;
+    getClients = () : Client => {
+        return clientBusiness.getClients();
     }
     
     postClients = () => {
-        return clientBusiness.postClients;
+        return clientBusiness.postClients();
     }
     
     putClients = () => {
-        return clientBusiness.putClients;
+        return clientBusiness.putClients();
     }
     
     deleteClients = () => {
-        return clientBusiness.deleteClients;
+        return clientBusiness.deleteClients();
     }
     
 
