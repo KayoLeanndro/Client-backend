@@ -12,15 +12,15 @@ class ClientBusiness{
     }
     
     postClients = () => {
-        return clienteDatasource.postClients;
+        return clienteDatasource.postClients();
     }
     
     putClients = () => {
-        return clienteDatasource.putClients;
+        return clienteDatasource.putClients();
     }
     
     deleteClients = () => {
-        return clienteDatasource.deleteClients;
+        return clienteDatasource.deleteClients();
     }
     
 

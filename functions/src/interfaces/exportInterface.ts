@@ -1,1 +1,2 @@
-export * from './clients/client';
+export * from './clients/Client'
+export * from './utils/MessageTreatment'
