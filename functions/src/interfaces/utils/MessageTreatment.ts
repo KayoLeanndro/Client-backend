@@ -1,5 +1,6 @@
 export interface MessageTreatment {
     message: string;
     status: number;
-    sucess: false;
+    // sucess: false;
+    response: any;
 }

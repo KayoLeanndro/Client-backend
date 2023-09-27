@@ -1,4 +1,5 @@
-import { Client } from "../../interfaces/exportInterface";
+import { messageTreatmentBusiness} from '../../business/exportsBusiness';
+import { Client,MessageTreatment} from "../../interfaces/exportInterface";
 
 
 class ClientDatasource {
@@ -7,9 +8,9 @@ class ClientDatasource {
         return { name: `Kayo get id - ${idClient}` };
     } 
 
-    getClients = () : Client => {
+    getClients = () : MessageTreatment => {
         let client : Client = {id:'1',name: 'Kayo', email:'kayolele222@gmail.com', sucess : true};
-        return client
+        return messageTreatmentBusiness.sucessMsg('Alguns clientes foram encontrados', client);
     }
     
     postClients = () => {

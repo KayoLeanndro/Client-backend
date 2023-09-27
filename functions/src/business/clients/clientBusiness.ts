@@ -1,5 +1,5 @@
 import { clienteDatasource } from '../../datasource/clients/datasourseClient'
-import { Client } from '../../interfaces/exportInterface';
+// import { Client } from '../../interfaces/exportInterface';
 
 class ClientBusiness{
 
@@ -7,7 +7,7 @@ class ClientBusiness{
         return clienteDatasource.getClientById(idClient);
     }
 
-    getClients = () : Client => {
+    getClients = ()  => {
         return clienteDatasource.getClients();
     }
     
