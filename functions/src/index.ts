@@ -3,9 +3,19 @@ import * as express from 'express';
 
 import { clientController } from './controller/exportsControllers'
 
+let admin = require("firebase-admin");
+
+const serviceAccount = require("../src/config/api---nodejsexpress-firebase-adminsdk-emetk-faff7d870b.json");
+
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+  databaseURL: "https://api---nodejsexpress-default-rtdb.firebaseio.com"
+});
+
+
 //APIS
-var AppApi = express();
-var AppClients = express();
+let AppApi = express();
+let AppClients = express();
 
 
 
